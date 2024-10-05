@@ -2,18 +2,16 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        
 
-        // Input two numbers
-        System.out.print("Enter first number: ");
-        double num1 = scanner.nextDouble();
+       
+        double num1 =10;
 
-        System.out.print("Enter second number: ");
-        double num2 = scanner.nextDouble();
+        double num2 = 8;
 
         // Input the operation
         System.out.print("Choose operation (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
+        char operator = '+';
 
         double result = 0;
 

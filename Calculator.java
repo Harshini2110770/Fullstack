@@ -10,7 +10,6 @@ public class Calculator {
         double num2 = 8;
 
         // Input the operation
-        System.out.print("Choose operation (+, -, *, /): ");
         char operator = '+';
 
         double result = 0;

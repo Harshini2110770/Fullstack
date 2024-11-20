@@ -1,4 +1,4 @@
-from cicd_app.main import add, subtract
+from cicd_app import add, subtract
 def test_add():
    assert add(3, 5) == 8
    assert add(-1, 1) == 0

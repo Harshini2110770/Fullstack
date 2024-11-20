@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/cyberspacekash/fslab.git'
+                git branch: 'main', url: 'https://github.com/Harshini2110770/Fullstack.git'
             }
         }
         stage('Install Dependencies') {

@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    parameters {
+        string(name: 'NUM1', defaultValue: '5', description: 'First number')
+        string(name: 'NUM2', defaultValue: '10', description: 'Second number')
+    }
+    stages {
+        stage('Compile') {
+            steps {
+                bat 'javac Add.java'
+            }
+        }
+        stage('Run') {
+            steps {
+                bat "java Add ${params.NUM1} ${params.NUM2}"
+            }
+        }
+    }
+}
